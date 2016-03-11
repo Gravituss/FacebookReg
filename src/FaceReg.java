@@ -15,13 +15,13 @@ public class FaceReg {
 		// preparing data for input
 		String firstName = "John";
 		String lastName = "Stroppenberg";
-		String emailOrPhone = "+380991234567";
+		String emailOrPhone = "+380991114433";
 		String newPass = "45678jhj";
 		
 		//Birthday
 		String month3Letters = "Apr";
-		int day = 14;
-		int year = 1987;
+		String day = "14";
+		String year = "1987";
 		boolean female = false;
 		
 		//entering text data
@@ -32,13 +32,13 @@ public class FaceReg {
 		driver.findElement(By.id("u_0_b")).sendKeys(newPass);
 		
 		//entering birthday into dropdown menus
-
-		insertText("month", month3Letters);
 		
+		Select dropdown = new Select(driver.findElement(By.id("month")));
+		dropdown.selectByVisibleText(month3Letters);		
 		Select dropdown2 = new Select(driver.findElement(By.id("day")));
-		dropdown2.selectByVisibleText(month3Letters);		
+		dropdown2.selectByValue(day);		
 		Select dropdown3 = new Select(driver.findElement(By.id("year")));
-		dropdown3.selectByVisibleText(month3Letters);		
+		dropdown3.selectByVisibleText(year);		
 		
 		
 		
@@ -46,16 +46,5 @@ public class FaceReg {
 
 	}
 	
-	public static void insertText (String id, String txt){
-		WebDriver driver2 = new FirefoxDriver();
-		Select dropdownX = new Select(driver2.findElement(By.id(id)));
-		dropdownX.selectByVisibleText(txt);
-		
-	}
-	
-	public static void insertText (){
-		
-		
-	}	
 
 }
