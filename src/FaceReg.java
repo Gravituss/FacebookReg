@@ -14,8 +14,8 @@ public class FaceReg {
 		
 		// preparing data for input
 		String firstName = "John";
-		String lastName = "Stroppenberg";
-		String emailOrPhone = "+380991114433";
+		String lastName = "Stropenberg";
+		String emailOrPhone = "+380991112222";
 		String newPass = "45678jhj";
 		
 		//Birthday
@@ -38,9 +38,12 @@ public class FaceReg {
 		Select dropdown2 = new Select(driver.findElement(By.id("day")));
 		dropdown2.selectByValue(day);		
 		Select dropdown3 = new Select(driver.findElement(By.id("year")));
-		dropdown3.selectByVisibleText(year);		
+		dropdown3.selectByVisibleText(year);	
 		
+		if (female){driver.findElement(By.id("u_0_e")).click();} 
+			else {driver.findElement(By.id("u_0_f")).click();}
 		
+		driver.findElement(By.id("u_0_j")).click();
 		
 		
 
