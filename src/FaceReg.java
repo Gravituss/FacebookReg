@@ -12,11 +12,11 @@ public class FaceReg {
 		driver.get("http://facebook.com");
 		driver.manage().window().maximize();
 		
-		// preparing data for input
-		String firstName = "John";
-		String lastName = "Stropenberg";
-		String emailOrPhone = "+380991112222";
-		String newPass = "45678jhj";
+		// preparing data for input (prefferably change name and email, please)
+		String firstName = "Michael";
+		String lastName = "Younberg";
+		String emailOrPhone = "xf5jdsre23dd364z5f@gmail.com";
+		String newPass = "4565hloj";
 		
 		//Birthday
 		String month3Letters = "Apr";
@@ -40,9 +40,11 @@ public class FaceReg {
 		Select dropdown3 = new Select(driver.findElement(By.id("year")));
 		dropdown3.selectByVisibleText(year);	
 		
+		// selecting gender depending of input data
 		if (female){driver.findElement(By.id("u_0_e")).click();} 
 			else {driver.findElement(By.id("u_0_f")).click();}
 		
+		//clicking Sign Up button
 		driver.findElement(By.id("u_0_j")).click();
 		
 		
