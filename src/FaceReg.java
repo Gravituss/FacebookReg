@@ -13,10 +13,10 @@ public class FaceReg {
 		driver.manage().window().maximize();
 		
 		// preparing data for input (prefferably change name and email, please)
-		String firstName = "Michael";
-		String lastName = "Younberg";
-		String emailOrPhone = "xf5jdsre23dd364z5f@gmail.com";
-		String newPass = "4565hloj";
+		String firstName = "Mick";
+		String lastName = "Younterq";
+		String emailOrPhone = "x4fzporett12364z5f@gmail.com";
+		String newPass = "45jer2loj";
 		
 		//Birthday
 		String month3Letters = "Apr";
