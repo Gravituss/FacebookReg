@@ -12,16 +12,16 @@ public class FaceReg {
 		driver.get("http://facebook.com");
 		driver.manage().window().maximize();
 		
-		// preparing data for input (prefferably change name and email, please)
-		String firstName = "Mick";
-		String lastName = "Younterq";
-		String emailOrPhone = "x4fzporett12364z5f@gmail.com";
-		String newPass = "45jer2loj";
+		// preparing data for input (preferably change name and email, please)
+		String firstName = "Gregory";
+		String lastName = "Wondershultz";
+		String emailOrPhone = "x4fzpors0kl364z5f@gmail.com";
+		String newPass = "45sd91oj";
 		
 		//Birthday
-		String month3Letters = "Apr";
-		String day = "14";
-		String year = "1987";
+		String month3Letters = "May";
+		String day = "22";
+		String year = "1985";
 		boolean female = false;
 		
 		//entering text data
