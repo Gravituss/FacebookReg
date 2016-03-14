@@ -1,4 +1,6 @@
-.project
-.classpath
+*.core.prefs
 *.class
+.classpath
+.project
+
 
