@@ -18,7 +18,7 @@ public class FaceReg {
 		String emailOrPhone = "x4fzpors0kl364z5f@gmail.com";
 		String newPass = "45sd91oj";
 
-		// Birthday
+		// Birthday & gender
 		String month3Letters = "May";
 		String day = "22";
 		String year = "1985";
