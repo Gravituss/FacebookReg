@@ -32,7 +32,6 @@ public class FaceReg {
 		driver.findElement(By.id("u_0_b")).sendKeys(newPass);
 
 		// entering birthday into dropdown menus
-
 		Select dropdown = new Select(driver.findElement(By.id("month")));
 		dropdown.selectByVisibleText(month3Letters);
 		Select dropdown2 = new Select(driver.findElement(By.id("day")));
