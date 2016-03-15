@@ -10,7 +10,6 @@ public class FaceReg {
 
 		// initializing WebDriver instance, opening facebook webpage,
 		// waiting for the last used web element appear on the webpage
-
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://facebook.com");
 		WebDriverWait wait = new WebDriverWait(driver, 15);
