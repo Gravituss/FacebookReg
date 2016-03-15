@@ -1,15 +1,21 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FaceReg {
 
 	public static void main(String[] args) {
 
 		// initializing WebDriver instance, opening facebook webpage,
-		// maximizing browser's window
+
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://facebook.com");
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("u_0_j")));
+
+		// maximizing browser's window
 		driver.manage().window().maximize();
 
 		// preparing data for input (preferably change name and email, please)
