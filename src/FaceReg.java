@@ -1,3 +1,7 @@
+/* This project shows automation of Facebook registration 
+ */
+
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,8 +24,8 @@ public class FaceReg {
 
 		// preparing data for input (preferably change name and email, please)
 		String firstName = "Gregory";
-		String lastName = "Wondershultz";
-		String emailOrPhone = "x4fzpors0kl364z5f@gmail.com";
+		String lastName = "Wondershulzz";
+		String emailOrPhone = "x4fzwlpcs59h364z5f@gmail.com";
 		String newPass = "45sd91oj";
 
 		// Birthday & gender
